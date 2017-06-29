@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lostrecords",
+  "name": "jtrent238's Lost Records Mod",
+  "description": "Adds in the records that was lost in Minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["jtrent238"],
+  "credits": "jtrent238",
+  "logoFile": "logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
