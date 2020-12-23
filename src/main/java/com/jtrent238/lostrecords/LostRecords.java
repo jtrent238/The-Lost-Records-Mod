@@ -35,7 +35,7 @@ public class LostRecords
 
 	@Instance(MODID)
     public static LostRecords instance;
-	public static final String MODVERSION = "1.0.2.0";
+	public static final String MODVERSION = "1.0.1.0";
 	public static final String MODNAME = "jtrent238's Lost Records Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
