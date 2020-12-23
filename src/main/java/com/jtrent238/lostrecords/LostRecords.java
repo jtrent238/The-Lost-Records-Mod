@@ -35,7 +35,7 @@ public class LostRecords
 
 	@Instance(MODID)
     public static LostRecords instance;
-	public static final String MODVERSION = "1.0.0.0";
+	public static final String MODVERSION = "1.0.2.0";
 	public static final String MODNAME = "jtrent238's Lost Records Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
@@ -53,7 +53,7 @@ public class LostRecords
 @Mod.EventHandler
 public void preInit(FMLPreInitializationEvent event)
 {
-	
+	Config.ConfigFile(event);
 }
 
 
@@ -71,42 +71,9 @@ public void init(FMLInitializationEvent event)
 	//OreDict.addores();
 	//Achievements.loadAchievements();
 	//Stats.RegisterStats();
+	LootRegistry.registerLoot();
+
 }
-
-
-public static CreativeTabs PlayerHunter = new CreativeTabs("PlayerHunter")
-
-{
-	public Item getTabIconItem() {
-
-		return new ItemStack(Items.diamond_sword).getItem();
-	}
-	public boolean hasSearchBar(){
-		return false;
-	}
-	/*
-	@SideOnly(Side.CLIENT)
-	public String getBackgroundImageName() 
-	{
-		return "EpicProportionsMod_Halloween.png";
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public boolean drawInForegroundOfTab() 
-	{
-		return false;
-	}
-	*/
-	}
-	
-;
-
-
-
-
-
-
-
 
 
 @Mod.EventHandler
@@ -119,7 +86,6 @@ public void postInit(FMLPostInitializationEvent event) {
 		
 		if (HCloaded){
 			
-		//ganymedes01.headcrumbs.utils.HeadUtils.getHeadfromEntity(EntityLoader.EntityPlayerHunter);
 		//ganymedes01.headcrumbs.utils.HeadUtils.createHeadFor(MODAUTHOR);
 	
 		}
